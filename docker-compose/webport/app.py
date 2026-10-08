@@ -73,7 +73,9 @@ def whoami():
 def websitespecs():
     return render_template('devops.html')
 
-
+@app.route('/calendar')
+def calendar_redirect():
+    return redirect('https://calendar.app.google/BnpQGcApC41F617M9')
 
 #@app.route('/books')
 #def biblic_readings():
