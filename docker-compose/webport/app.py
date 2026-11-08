@@ -77,6 +77,10 @@ def websitespecs():
 def calendar_redirect():
     return redirect('https://calendar.app.google/BnpQGcApC41F617M9')
 
+@app.route('/glitchcard')
+def glitchcard_redirect():
+    return render_template('glitchcard.html')
+
 #@app.route('/books')
 #def biblic_readings():
 #    return render_template('books.html')
